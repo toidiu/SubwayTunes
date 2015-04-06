@@ -1,0 +1,9 @@
+04-06 12:36:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PLAY_EVOLUTIONS" not found; SQL statement:
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%' [42102-175]
+04-06 12:36:21 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Table "ARTIST" already exists; SQL statement:
+create table artist (
+id                        bigint not null,
+name                      varchar(255),
+constraint pk_artist primary key (id)) [42101-175]

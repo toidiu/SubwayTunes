@@ -1,0 +1,17 @@
+@(message: String, artists: List[Artist])
+
+@main("Welcome to Play") {
+
+
+    @message
+
+    @if(artists != null) {
+        @for(artist <- artists) {
+            <div>
+                @artist.id
+                @artist.name
+            </div>
+        }
+
+    }
+}
