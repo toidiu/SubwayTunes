@@ -47,4 +47,12 @@ import play.db.jpa.JPA;
     }
 
 
+    public static Object authenticate(String email, String password)
+    {
+        if(password.length() >= 6)
+        {
+            return true;
+        }
+        return null;
+    }
 }
